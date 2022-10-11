@@ -7,6 +7,7 @@ import datetime
 from .utils import cookieCart, cartData, guestOrder
 
 
+
 def store(request):
     data = cartData(request)
 
@@ -90,3 +91,4 @@ def processOrder(request):
 		)
 
 	return JsonResponse('Payment submitted..', safe=False)
+
